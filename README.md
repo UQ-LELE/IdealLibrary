@@ -12,6 +12,3 @@ Pattern Model View View-Model et Factory
 Filtre avancé pour la classification des listes de livres (par auteur, année, pays, pages, nombre de pages max) 
 Recherche dynamique dans les recylcerview
 Un style soigné et personnalisé
-
-N.B. : l'application n'intègre pas d'a
-
