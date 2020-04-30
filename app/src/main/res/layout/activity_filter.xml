@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLight"
+    android:orientation="vertical"
+    tools:context=".FilterActivity">
+
+    <include
+        android:id="@+id/toolbar_filter"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="13dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/colorDark" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_bhaina_medium"
+            android:text="Afficher les livres :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+            <CheckBox
+                android:id="@+id/cb_by_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorGreenAccent"
+                android:fontFamily="@font/baloo_bhaina_regular"
+                android:text="Lu" />
+
+            <CheckBox
+                android:id="@+id/cd_by_not_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorGreenAccent"
+                android:fontFamily="@font/baloo_bhaina_regular"
+                android:text="Non lu" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="13dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/colorDark" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_bhaina_medium"
+            android:text="Trier par :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rb_group_filter_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp">
+
+            <RadioButton
+                android:id="@+id/rb_by_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorGreenAccent"
+                android:fontFamily="@font/baloo_bhaina_regular"
+                android:text="Auteur"
+                android:theme="@style/IdealLibraryTheme" />
+
+            <RadioButton
+                android:id="@+id/rb_by_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorGreenAccent"
+                android:fontFamily="@font/baloo_bhaina_regular"
+                android:text="Année" />
+
+            <RadioButton
+                android:id="@+id/rb_by_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorGreenAccent"
+                android:fontFamily="@font/baloo_bhaina_regular"
+                android:text="Pays" />
+
+            <RadioButton
+                android:id="@+id/rb_by_pages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorGreenAccent"
+                android:fontFamily="@font/baloo_bhaina_regular"
+                android:text="Pages" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="13dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/colorDark" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_bhaina_medium"
+            android:text="Dans l'ordre :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rb_group_filter_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+            <RadioButton
+                android:id="@+id/rb_by_order_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorGreenAccent"
+                android:fontFamily="@font/baloo_bhaina_regular"
+                android:text="Croissant" />
+
+            <RadioButton
+                android:id="@+id/rb_by_order_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorGreenAccent"
+                android:fontFamily="@font/baloo_bhaina_regular"
+                android:text="Décroissant" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="13dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/colorDark" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_bhaina_medium"
+            android:text="Par nombre de pages :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="13dp">
+
+            <TextView
+                android:id="@+id/txt_nb_max_pages_choosen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhaina_regular"
+                android:text="nb max."
+                android:textAlignment="center" />
+
+            <SeekBar
+                android:id="@+id/sb_by_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="600" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save_filter_preferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:backgroundTint="?attr/colorAccent"
+        android:fontFamily="@font/baloo_bhaina_medium"
+        android:text="Enregistrer"
+        android:textColor="#FFFFFF"
+        android:theme="@style/IdealLibraryTheme" />
+
+</LinearLayout>
